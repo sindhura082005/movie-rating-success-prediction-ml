@@ -1,29 +1,61 @@
 ## Movie Rating & Success Prediction using Machine Learning (R)
 
-### Overview
-This project analyzes movie metadata to identify key factors influencing movie success and audience ratings.
-Statistical analysis and machine learning models were applied to classify movies into performance categories.
+## Overview
+This project explores movie metadata to identify key factors influencing movie success and audience ratings.
+Statistical analysis and machine learning models were applied to classify movies into performance categories
+(Low, Medium, High) using structured movie attributes.
 
-### Dataset
+## Dataset
 - Source: Kaggle (Movie Metadata Dataset)
-- Records: 5,000+
-- Features: budget, revenue, runtime, popularity, vote_average, vote_count
+- Records: 5,000+ movies
+- Key Features:
+  - Budget
+  - Revenue
+  - Runtime
+  - Popularity
+  - Vote Average
+  - Vote Count
 
-### Key Analysis
-- Exploratory Data Analysis (EDA) using correlation heatmaps
-- K-Means clustering with PCA for audience segmentation
-- Decision Tree classification for interpretability
-- Random Forest model for feature importance analysis
-- Model validation using Out-of-Bag (OOB) error
+## Project Workflow
+1. Data cleaning and preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Correlation analysis and visualization
+4. K-Means clustering with PCA
+5. Decision Tree classification
+6. Random Forest modeling
+7. Model evaluation using feature importance and OOB error
 
-### Key Insights
+## Key Analysis & Models
+### Exploratory Data Analysis
+- Correlation heatmaps to identify relationships between financial, popularity, and rating variables
+
+### Clustering
+- K-Means clustering applied with PCA for dimensionality reduction
+- Segmented movies based on performance characteristics
+
+### Classification Models
+- Decision Tree for interpretable rule-based classification
+- Random Forest for improved predictive performance and robustness
+
+## Model Evaluation
+- Feature importance analysis to identify influential variables
+- Out-of-Bag (OOB) error used to assess model generalization
+
+## Key Insights
 - Vote count and popularity are the strongest predictors of movie success
-- Higher budgets correlate positively with revenue but not always ratings
-- Ensemble models outperform single decision trees
+- Budget shows strong correlation with revenue but limited direct impact on ratings
+- Ensemble models outperform single decision trees in classification stability
 
-### Tools & Technologies
-- R (caret, randomForest, rpart, ggplot2)
+## Visual Outputs
+![Correlation Heatmap](outputs/heatmap.png)
+![K-Means Clustering](outputs/kmeans_cluster.png)
+![Decision Tree](outputs/decision_tree.png)
+![Random Forest Feature Importance](outputs/rf_feature_importance.png)
+![OOB Error Plot](outputs/oob_error.png)
+
+## Tools & Technologies
+- R
+- Packages: ggplot2, caret, randomForest, rpart
 - Statistical Analysis & Machine Learning
 
-### Results
-Random Forest achieved the most stable performance with lower OOB error, highlighting robust generalization.
+
