@@ -46,13 +46,6 @@ Statistical analysis and machine learning models were applied to classify movies
 - Budget shows strong correlation with revenue but limited direct impact on ratings
 - Ensemble models outperform single decision trees in classification stability
 
-## Visual Outputs
-![Correlation Heatmap](outputs/heatmap.png)
-![K-Means Clustering](outputs/kmeans_cluster.png)
-![Decision Tree](outputs/decision_tree.png)
-![Random Forest Feature Importance](outputs/rf_feature_importance.png)
-![OOB Error Plot](outputs/oob_error.png)
-
 ## Tools & Technologies
 - R
 - Packages: ggplot2, caret, randomForest, rpart
